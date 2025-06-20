@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+cd "$(dirname "$0")/.."
+
 echo ">>> 安装 pytest"
 pip3 install --quiet pytest pytest-cov
 
