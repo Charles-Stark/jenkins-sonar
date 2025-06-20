@@ -9,4 +9,4 @@ pip install pytest pytest-cov
 
 echo ">>> 运行测试"
 export PYTHONPATH=$PYTHONPATH:$(pwd)
-pytest --cov=app --cov-report=xml tests/
+pytest --junit-xml=test-results.xml --cov=app --cov-report=xml --cov-report=html tests/
